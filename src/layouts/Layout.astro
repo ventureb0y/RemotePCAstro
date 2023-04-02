@@ -1,0 +1,23 @@
+---
+export interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/icons8-монитор-64.png" />
+		<meta name="generator" content={Astro.generator} />
+		<meta name="robots" content={Astro.generator} />
+		<title>{title}</title>
+		<meta name="description" content="asdasd">
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>

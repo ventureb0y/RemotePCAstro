@@ -1,0 +1,27 @@
+---
+
+import './globals.css'
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header/index.astro'
+import Card from '../components/Card/index.astro'
+import styles from './home.module.css'
+---
+<Layout title="Компьютерная помощь онлайн">
+	<Header/>
+	<div class='container'>
+		<div class={styles.offerbox}>
+			<h3 class={styles.offer__title}>
+				Руки наших профессионалов дотянутся до любой точки мира!
+			</h3>
+			<h1 class={styles.offer__desc}>
+				Удаленная компьютерная помощь, помощь по установке программ и устранении проблем. Консультации перед покупкой техники, подбор комплектации для ПК, разработка ботов и сайтов.
+			</h1>
+		</div>
+		<div class={styles.cardbox}>
+			<Card title='Адекватные ценники' desc="Ценники на наши услуги ниже рыночных более чем на 40%." img='../../public/saving-money.png'/>
+			<Card title='Деньги после' desc="Вы платите только по факту решения проблемы." img='../../public/money.png'/>
+			<Card title='Выгодный сервис' desc="Решаем проблемы с максимальной выгодой для вас." img='../../public/profits.png'/>
+		</div>
+	</div>
+	<img class="img" src="../../public/bg.jpg" alt="">
+</Layout>

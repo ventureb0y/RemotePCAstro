@@ -1,0 +1,22 @@
+.title {
+    @apply text-6xl
+    text-white
+    font-bold
+    mb-4
+    bg-red-500
+    p-4
+    rounded-lg
+}
+.subtitle {
+    @apply text-2xl
+    text-white
+    font-medium
+}
+.container {
+    @apply
+    flex
+    flex-col
+    items-center
+    justify-center
+    h-screen
+}

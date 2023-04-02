@@ -1,0 +1,75 @@
+.offerbox {
+    @apply
+    mt-24 
+    /* mt-0 */
+    mb-12
+    flex
+    flex-col
+    items-center
+    max-md:mt-16 max-md:mb-10
+    max-sm:mt-12 max-sm:mb-8
+    max-[520px]:mt-6
+}
+
+.offer__title{
+    @apply
+    text-center
+    text-6xl
+    font-bold
+    mb-6
+    max-sm:text-5xl
+    max-[520px]:text-4xl max-[520px]:mb-3
+    max-[420px]:text-3xl
+}
+
+.offer__desc {
+    @apply
+    text-lg
+    text-center
+    font-medium
+    max-sm:text-base
+    max-[520px]:text-sm
+}
+
+.offer__logo{
+    @apply
+    w-1/2
+}
+
+.cardbox {
+    @apply
+    flex
+    justify-between
+    mb-14
+    max-md:flex-wrap
+}
+/* .contacts__title{
+    @apply
+    text-white
+    font-bold
+    text-5xl
+    mb-2
+}
+.contacts__desc{
+    @apply
+    text-slate-400
+    font-normal
+    text-lg
+    mb-4
+}
+.contacts__link a{
+    @apply
+    w-fit
+    flex
+    text-xl
+    font-semibold
+    mb-1
+    text-slate-300
+    hover:text-indigo-500
+    duration-300
+}
+.contacts__link img{
+    @apply
+    h-7
+    pr-1
+} */

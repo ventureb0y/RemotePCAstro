@@ -1,0 +1,26 @@
+---
+import styles from './card.module.css'
+
+export interface Props {
+	title: string;
+	desc: string;
+	img: string;
+}
+
+const { title, desc, img } = Astro.props;
+
+---
+<div class={styles.card__body}>
+	<div class={styles.imgbox}>
+		<img class={styles.card__img} src={img} alt="">
+	</div>	
+	<div class={styles.content}>
+		<h2 class={styles.card__title}>
+			{title}
+		</h2>
+		<span class={styles.card__desc}>
+			{desc}
+		</span>
+	</div>
+</div>
+

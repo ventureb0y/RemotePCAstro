@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+    @apply
+    m-auto
+    max-w-5xl
+    p-4
+}
+.img {
+    @apply
+    max-h-[660px]
+    min-h-[660px]
+    w-full
+    absolute
+    top-0 left-0
+    -z-10
+    max-xl:min-h-[720px]
+    max-md:min-h-[660px]
+    max-sm:min-h-[540px]
+    max-[520px]:min-h-[500px]
+    max-[420px]:min-h-[540px]
+    max-[320px]:min-h-[580px]
+}
+body {
+    font-family: Inter, 'Century Gothic';
+    @apply
+    bg-slate-900
+}

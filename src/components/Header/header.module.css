@@ -1,0 +1,57 @@
+.header{
+    @apply
+    w-full
+    z-10
+}
+.nav {
+    @apply
+    flex
+    justify-between
+    items-center
+}
+.logo {
+    @apply
+    text-xl
+    h-20
+    font-medium
+    cursor-pointer
+    mr-8
+}
+.phone {
+    @apply
+    text-base
+    font-medium
+}
+.contacts__list {
+    @apply
+    list-none
+    flex
+    max-md:flex-wrap
+}
+.contacts__link {
+    @apply
+    flex
+    items-center
+    text-base
+}
+.contacts__link:not(:last-child) {
+    @apply
+    text-base
+    pr-6
+}
+.contacts__link a{
+    @apply
+    flex
+    items-center
+    w-fit
+    text-base
+    font-semibold
+    mb-1
+    hover:text-indigo-500
+    duration-300
+}
+.contacts__link img{
+    @apply
+    h-7
+    pr-1
+}

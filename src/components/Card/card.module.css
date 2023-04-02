@@ -1,0 +1,46 @@
+.card__body:not(:last-child) {
+    @apply
+    mr-2
+    max-md:mr-0
+    max-md:mb-3
+}
+.card__body{
+    @apply
+    bg-white
+    shadow-xl
+    p-6
+    rounded-2xl
+    w-fit
+    max-md:w-full
+    max-md:flex
+    max-[420px]:p-4
+    items-center
+}
+.card__title {
+    @apply
+    text-2xl
+    font-bold
+    mb-1
+    max-[520px]:text-xl
+}
+.card__desc{
+    @apply
+    text-base
+    font-medium
+    text-slate-500
+    max-[520px]:text-sm
+}
+.imgbox{
+    @apply
+    h-fit w-fit
+    max-md:mr-6
+}
+.card__img{
+    @apply
+    m-auto
+    pb-8
+    w-1/2
+    max-md:p-0
+    max-md:h-fit
+    max-md:w-28
+}
